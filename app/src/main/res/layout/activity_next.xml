@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".next">
+    <Button
+        android:id="@+id/selectFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="select audio file"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/uploadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="upload audio file"
+        app:layout_constraintTop_toBottomOf="@+id/selectFile"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectFile" />
+
+    <Button
+        android:id="@+id/downloadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="452dp"
+        android:text="download audio file"
+        app:layout_constraintTop_toBottomOf="@+id/selectFile"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="200sp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertFile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="106dp" />
+
+    <Button
+        android:id="@+id/convertFile"
+        android:layout_width="419dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="96dp"
+        android:text="Convert audio to notes"
+        app:layout_constraintTop_toBottomOf="@+id/uploadFile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp" />
+
+    <TextView
+        android:id="@+id/textConvert"
+        android:layout_width="201dp"
+        android:layout_height="49dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadFile"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="255dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
